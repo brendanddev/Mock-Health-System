@@ -1,0 +1,191 @@
+
+/** Styles for views/HealthInfoView.css */
+/** @author: Brendan Dileo, 2025-02-10 **/
+
+
+.health-info-view {
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Shadow for Box --> Can be better look at docs */ 
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+
+.health-info-view h2 {
+    font-family: 'Poppins', sans-serif; /* Google Poppins font */
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+.subheading {
+    font-family: 'Poppins', sans-serif; /* Google Poppins font */
+    font-size: 1rem;
+    color: #161212;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.health-info-view form {
+    font-family: 'Spectral', serif; /* Google font */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Added space */
+    align-items: center;
+}
+
+.health-info-view label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+    font-size: 1.1rem; 
+}
+
+.health-info-view input {
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px; 
+    font-size: 1.1rem;
+    color: #333333;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.health-info-view input:focus {
+    border-color: #007bff; 
+    outline: 2px solid;
+}
+
+.health-info-view input::placeholder {
+    color: #77b5f8;
+}
+
+.dropdown-container {
+    margin-bottom: 20px; 
+}
+
+.dropdown-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px; 
+    display: block;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.next-button {
+    background-color: rgb(44, 185, 44);
+    color: white;
+    padding: 15px 25px; 
+    font-size: 1.2rem; 
+    border: none;
+    border-radius: 6px; 
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.next-button:hover { /* Styles when user hovers over button */
+    background-color: #006bdd; 
+}
+
+.back-button {
+    background-color: rgb(235, 76, 76);
+    color: white;
+    padding: 15px 25px; /* Increased button padding */
+    font-size: 1.2rem; /* Larger font size */
+    border: none;
+    border-radius: 6px; /* Slightly larger border radius */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.back-button:hover { /* Hover styles */
+    background-color: rgb(161, 2, 2);
+}
+
+/* Desktop responsive design */
+@media (max-width: 1024px) {
+    .name-info-view {
+        padding: 25px;
+        margin: 30px auto;
+    }
+
+    .name-info-view h1 {
+        font-size: 2rem;
+    }
+
+    .name-info-view input, .name-info-view button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav a {
+        font-size: 1.125rem;
+    }
+}
+
+/* Tablet  */
+@media (max-width: 768px) { /* Rough sizing as large phones and tablets will vary */
+    .name-info-view {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .name-info-view h1 {
+        font-size: 1.5rem;
+    }
+
+    .name-info-view input, .name-info-view button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    header nav a {
+        font-size: 1rem;
+    }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+    .name-info-view {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    .name-info-view h1 {
+        font-size: 1.25rem;
+    }
+
+    .name-info-view input, .name-info-view button {
+        font-size: 0.875rem;
+        padding: 8px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav a {
+        font-size: 0.875rem;
+    }
+}

@@ -1,0 +1,39 @@
+
+/** Styles for components/Footer.jsx */
+/** @author: Brendan Dileo, 2025-02-11 **/
+
+.custom-footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: #60a8df;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-heading {
+    font-family: 'Joti One', cursive;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+.footer-link:hover {
+    text-decoration: underline; 
+}

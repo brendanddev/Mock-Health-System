@@ -1,0 +1,89 @@
+
+/** Styles for views/SummaryView.css */
+/** @author: Brendan Dileo, 2025-02-12 **/
+
+.summary-view {
+    max-width: 800px;
+    margin: 25px auto;
+    background-color: #ffffff; 
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+header {
+    background-color: #60a8df;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 8px 8px 0 0; 
+    margin-bottom: 20px; 
+}
+
+header h1 {
+    font-family: 'Spectral', serif; /* Google font */
+    font-size: 2rem; 
+    margin: 0;
+}
+
+header nav { /* Still inside header */
+    font-family: 'Spectral', serif; /* Google font */
+    margin-top: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.25rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.submit-button {
+    background-color: rgb(44, 185, 44);
+    color: white;
+    padding: 15px 25px; 
+    font-size: 1.2rem; 
+    border: none;
+    border-radius: 6px; 
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+
+.submit-button:hover { /* Styles when user hovers over button */
+    background-color: #006bdd; 
+}
+
+.back-button {
+    background-color: rgb(235, 76, 76);
+    color: white;
+    padding: 15px 25px; /* Increased button padding */
+    font-size: 1.2rem; /* Larger font size */
+    border: none;
+    border-radius: 6px; /* Slightly larger border radius */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.back-button:hover { /* Hover styles */
+    background-color: rgb(161, 2, 2);
+}
+
+
+
+
+
